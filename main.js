@@ -1,25 +1,25 @@
-var elPokeList = document.querySelector(".poke-list")
+var elFilmList = document.querySelector(".film-list");
 
-chopilganPokelar = films.slice(0 , 21)
+chopilganFilms = films.slice(0 , 21);
 
-for (var film of chopilganPokelar) {
+for (var film of chopilganFilms) {
     
-    var newItem = document.createElement("li")
-    var newTitle = document.createElement("h2")
-    var newImg = document.createElement("img")
-    var newOverview = document.createElement("p")
-    var newGenres = document.createElement("p")
-    
-    
-    newTitle.textContent = film.title
-    newImg.src = film.poster
-    newOverview.textContent = film.overview
-    newGenres.textContent = film.genres.join(" ")
+    var newItem = document.createElement("li");
+    var newTitle = document.createElement("h2");
+    var newImg = document.createElement("img");
+    var newOverview = document.createElement("p");
+    var newGenres = document.createElement("p");
     
     
+    newTitle.textContent = film.title;
+    newImg.src = film.poster;
+    newOverview.textContent = film.overview;
+    newGenres.textContent = film.genres.join(" ");
     
-    newItem.append(newImg ,newTitle , newOverview , newGenres)
-    elPokeList.append(newItem)
+    
+    
+    newItem.append(newImg ,newTitle , newOverview , newGenres);
+    elFilmList.append(newItem);
     
     
 }
